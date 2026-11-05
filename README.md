@@ -2,7 +2,7 @@
 
 Computer science student and Turkish–English interpreter, bridging language and technology.
 
-🌐 **Portfolio:** [hananelifsahin-lab.github.io/hananelifsahin-lab](https://hananelifsahin-lab.github.io/hananelifsahin-lab/)
+🌐 **Portfolio:** [hanansahin.github.io](https://hanansahin.github.io)
 
 💼 **LinkedIn:** [linkedin.com/in/hanansahin](https://www.linkedin.com/in/hanansahin)
 
