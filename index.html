@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanan Sahin | Computer Science Student and Turkish–English Interpreter</title>
+<meta name="description" content="Computer science student and Turkish–English interpreter bridging language and technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F7F8; --surface:#FFFFFF; --ink:#13212B; --muted:#52636F;
+  --line:#D5DDE2; --accent:#0F6E73; --accent-ink:#FFFFFF;
+  --serif:"Literata",Georgia,"Times New Roman",serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E171D; --surface:#15222B; --ink:#E8EEF1; --muted:#9FB0BB;
+    --line:#2A3B46; --accent:#4FC3C4; --accent-ink:#0E171D; color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+header.top{padding:1.25rem 0}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:600;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.25rem;color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--accent)}
 
+.hero{padding:4.5rem 0 3.5rem}
+.pair{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1.25rem;margin-bottom:2.5rem}
+.pair p{margin:0;font-family:var(--serif);font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.2}
+.pair .tr{text-align:right}
+.pair .en{color:var(--muted)}
+.pair .bridge{height:2px;width:clamp(2.5rem,8vw,5rem);background:var(--accent);position:relative}
+.pair .bridge::before,.pair .bridge::after{content:"";position:absolute;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.pair .bridge::before{left:-2px}.pair .bridge::after{right:-2px}
+.hero h1{font:600 clamp(2.4rem,7vw,3.6rem)/1.1 var(--serif);margin:0 0 .75rem;letter-spacing:-.01em}
+.hero .role{font-size:1.2rem;color:var(--muted);margin:0 0 1.75rem;max-width:34rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.25rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:600 1.75rem/1.2 var(--serif);margin:0 0 1.5rem}
+h3{font:600 1.15rem/1.3 var(--sans);margin:0 0 .25rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.5rem;margin-top:2rem}
+.facts div{border-left:3px solid var(--accent);padding-left:.9rem}
+.facts b{display:block;font:600 1.6rem/1.2 var(--serif)}
+.facts span{color:var(--muted);font-size:.95rem}
+
+.proj{display:grid;gap:1.25rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.5rem}
+.card p{margin:.4rem 0 .75rem}
+.tags{color:var(--muted);font-size:.92rem;margin:0}
+.status{font-size:.85rem;font-weight:600;color:var(--accent)}
+
+.job{display:grid;grid-template-columns:9.5rem 1fr;gap:1rem 1.5rem;margin-bottom:2rem}
+.job .when{color:var(--muted);font-size:.95rem;padding-top:.2rem}
+.job ul{margin:.5rem 0 0;padding-left:1.1rem}
+.job li{margin-bottom:.3rem}
+.org{color:var(--muted);margin:0}
+
+blockquote{margin:0;font:400 1.25rem/1.6 var(--serif)}
+.cite{color:var(--muted);margin-top:.75rem}
+footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+
+@media (max-width:40rem){
+  .job{grid-template-columns:1fr;gap:.25rem}
+  .pair{grid-template-columns:1fr;gap:.5rem}
+  .pair .tr{text-align:left}
+  .pair .bridge{width:4rem}
+  nav a{margin-left:0;margin-right:1rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Hanan Sahin</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="pair" aria-label="Köprü kurmak means to build a bridge">
+        <p class="tr" lang="tr">Köprü kurmak</p>
+        <div class="bridge" aria-hidden="true"></div>
+        <p class="en">to build a bridge</p>
+      </div>
+      <h1>Hanan Sahin</h1>
+      <p class="role">Computer science student and Turkish–English interpreter, bridging language and technology.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>I have spent more than three years interpreting live Turkish–English classes and business meetings for an international community, while studying computer science with a 4.0 GPA. I coordinate virtual classrooms across time zones, and I build software that makes that kind of work easier to run.</p>
+      <p>I’m completing my B.S. in Computer Science at University of Maryland Global Campus, with a focus on software development and cybersecurity.</p>
+      <div class="facts">
+        <div><b>900+</b><span>hours of live interpretation</span></div>
+        <div><b>60+</b><span>students moderated weekly</span></div>
+        <div><b>4.0</b><span>GPA, A.S. and B.S. in progress</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="proj">
+        <!-- To link a project to its GitHub repo, add: <a href="https://github.com/YOURUSERNAME/REPO">View on GitHub</a> inside the card -->
+        <article class="card">
+          <h3>StudyBuddy</h3>
+          <span class="status">In active development</span>
+          <p>An Android study app that combines a timer, task manager, progress tracker, and motivation screen. It started as a Mobile Application Development course project. Tasks can be created, completed, and deleted, with a live progress ring. Next up are Turkish localization, persistent storage with Room, and a documented mobile security review.</p>
+          <p class="tags">Kotlin, Android Studio, SQLite</p>
+        </article>
+        <article class="card">
+          <h3>TaskFlow</h3>
+          <p>A desktop task tracker where small teams create projects, assign tasks, and move work across a Kanban-style board. I designed the class structure in UML first, using inheritance and encapsulation to keep task, user, and project logic separate.</p>
+          <p class="tags">Java, MySQL, Git</p>
+        </article>
+        <article class="card">
+          <h3>Session Tracker</h3>
+          <p>A Flask web app that logs attendance and notes for recurring virtual class sessions, replacing manual spreadsheet tracking. It reports participant attendance rates over any date range.</p>
+          <p class="tags">Python, Flask, SQLite</p>
+        </article>
+        <article class="card">
+          <h3>Library Management System</h3>
+          <p>A console-based library system with class hierarchies for books, members, and loans, planned with UML class and sequence diagrams before implementation.</p>
+          <p class="tags">C++, UML</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="when">Jan 2024 to present</div>
+        <div>
+          <h3>Interpreter and Virtual Course Moderator</h3>
+          <p class="org">Deen Arts Foundation, remote, part-time</p>
+          <ul>
+            <li>Delivered 900+ hours of real-time Turkish-to-English interpretation for live Islamic Traditional Arts classes, adapting complex cultural concepts without losing nuance.</li>
+            <li>Manage virtual classrooms for 60+ students each week: launching Zoom sessions, monitoring participation, and handling reminders, recordings, attendance, and technical support.</li>
+            <li>Serve as the link between students and instructors.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Jun 2026 to Sep 2026</div>
+        <div>
+          <h3>Freelance Interpreter</h3>
+          <p class="org">Global Centre of Islamic Art, remote</p>
+          <ul>
+            <li>Provided one-on-one consecutive Turkish–English interpretation in business meetings, using terminology specific to Islamic traditional arts.</li>
+            <li>Interpreted discussions on scheduling, payments, and agreements between the instructor and the organization.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">2026 to present</div>
+        <div>
+          <h3>Study Circle (Halaqat) Admin</h3>
+          <p class="org">Rabata, volunteer</p>
+          <ul>
+            <li>Support educational study circles with Zoom monitoring, participant coordination, and communications.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Jan 2026 to May 2027</div>
+        <div>
+          <h3>B.S. Computer Science</h3>
+          <p class="org">University of Maryland Global Campus</p>
+          <ul>
+            <li>4.0 GPA, Dean’s List, Alpha Sigma Lambda Honor Society, Women in CyberSecurity (WiCyS).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Completed Dec 2025</div>
+        <div>
+          <h3>A.S. Computer Science</h3>
+          <p class="org">Prince George’s Community College</p>
+          <ul>
+            <li>4.0 GPA, Prince George’s County Promise Scholar, Phi Theta Kappa Honor Society.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="wrap">
+      <h2>Publication</h2>
+      <blockquote>“The Language Between Us”</blockquote>
+      <p class="cite">Selected from more than 3,200 entries nationwide for Phi Theta Kappa’s 31st Nota Bene Literary &amp; Visual Arts Honors Anthology (February 2026), and featured in the Parade of Scholars at PTK Catalyst 2026.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>I’m open to internships and interpreting work. The best way to reach me is by email.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:hananelifsahin@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/hanansahin">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Hanan Sahin</div>
+</footer>
+</body>
+</html>
