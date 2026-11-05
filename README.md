@@ -1,16 +1,18 @@
-## Hi there 👋
+# Hi, I'm Hanan Sahin 👋
 
-<!--
-**hananelifsahin-lab/hananelifsahin-lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Computer science student and Turkish–English interpreter, bridging language and technology.
 
-Here are some ideas to get you started:
+🌐 **Portfolio:** [hananelifsahin-lab.github.io/hananelifsahin-lab](https://hananelifsahin-lab.github.io/hananelifsahin-lab/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+💼 **LinkedIn:** [linkedin.com/in/hanansahin](https://www.linkedin.com/in/hanansahin)
+
+## About me
+
+- 🎓 B.S. in Computer Science at University of Maryland Global Campus (4.0 GPA)
+- 🗣️ 900+ hours of real-time Turkish–English interpretation
+- 📱 Building StudyBuddy, an Android study app in Kotlin
+- 🔐 Interested in cybersecurity, and a member of Women in CyberSecurity (WiCyS)
+
+## Tech
+
+Java, Python, C++, Kotlin, SQL, Flask, MySQL, SQLite, Git
