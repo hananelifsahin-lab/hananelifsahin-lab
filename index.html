@@ -63,6 +63,7 @@ h3{font:600 1.15rem/1.3 var(--sans);margin:0 0 .25rem}
 .card p{margin:.4rem 0 .75rem}
 .tags{color:var(--muted);font-size:.92rem;margin:0}
 .status{font-size:.85rem;font-weight:600;color:var(--accent)}
+.links{display:flex;gap:1.25rem;flex-wrap:wrap;margin:.25rem 0 .9rem;font-weight:600}
 
 .job{display:grid;grid-template-columns:9.5rem 1fr;gap:1rem 1.5rem;margin-bottom:2rem}
 .job .when{color:var(--muted);font-size:.95rem;padding-top:.2rem}
@@ -128,12 +129,15 @@ footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px 
     <div class="wrap">
       <h2>Projects</h2>
       <div class="proj">
-        <!-- To link a project to its GitHub repo, add: <a href="https://github.com/YOURUSERNAME/REPO">View on GitHub</a> inside the card -->
         <article class="card">
           <h3>StudyBuddy</h3>
           <span class="status">In active development</span>
-          <p>An Android study app that combines a timer, task manager, progress tracker, and motivation screen. It started as a Mobile Application Development course project. Tasks can be created, completed, and deleted, with a live progress ring. Next up are Turkish localization, persistent storage with Room, and a documented mobile security review.</p>
-          <p class="tags">Kotlin, Android Studio, SQLite</p>
+          <p>An Android study app that combines a focus timer, task manager, progress tracker, and motivation screen. It started as a Mobile Application Development course project. Tasks can be created, completed, and deleted and are saved on the device, with a live progress ring and motivational quotes loaded from a web API. Next up are Turkish localization, a move to a Room database, and a documented mobile security review.</p>
+          <p class="links">
+            <a href="https://github.com/hanansahin/StudyBuddy">View on GitHub</a>
+            <a href="https://github.com/hanansahin/StudyBuddy/blob/main/docs/StudyBuddy_Design_Document.pdf">Design document (PDF)</a>
+          </p>
+          <p class="tags">Kotlin, Jetpack Compose, Android Studio</p>
         </article>
         <article class="card">
           <h3>TaskFlow</h3>
@@ -184,7 +188,7 @@ footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px 
       </div>
 
       <div class="job">
-        <div class="when">Jan 2026 to present</div>
+        <div class="when">2026 to present</div>
         <div>
           <h3>Study Circle (Halaqat) Admin</h3>
           <p class="org">Rabata, volunteer</p>
